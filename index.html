@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Open Graph -->
+    <title>Elias e la Pioggia | Noir Thriller</title>
+    <meta name="description" content="Manila non è solo una città. È un mostro che respira. Scopri il racconto noir ambientato tra i segreti di Intramuros." />
+    <meta property="og:title" content="Elias e la Pioggia | Noir Thriller" />
+    <meta property="og:description" content="L'Ordine si costruisce sul Silenzio. E sul Sangue. Una landing page interattiva per il racconto thriller ambientato a Manila." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920&auto=format&fit=crop" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              noir: {
+                900: '#0a0a0a',
+                800: '#121212',
+                700: '#1c1c1c',
+                accent: '#8a0000', // Deep blood red
+                gold: '#c5a059', // Muted gold for esoteric symbols
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              display: ['Cinzel', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #e5e5e5;
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      }
+      .red-glow {
+        text-shadow: 0 0 10px rgba(138, 0, 0, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
